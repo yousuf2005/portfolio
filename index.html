@@ -1,0 +1,126 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>yusuf's site</title>
+  </head>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="favicon.ico.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  /><link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="nav-bar">
+      <img src="./images/yusuf.png.png" />
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact-me">Contact</a>
+      </div>
+    </div>
+    <div class="top-container">
+      <img
+        class="top-cloud"
+        src="images/Cartoon Cloud Drawing Free Photo PNG.png"
+        alt="cloud image"
+      />
+      <h1>I'm Yousuf.</h1>
+      <h2>a <span class="pro">pro</span>grammer.</h2>
+      <img
+        class="bottom-cloud"
+        src="images/Cartoon Cloud Drawing Free Photo PNG.png"
+        alt="cloud image"
+      />
+      <img
+        src="images/pngkey.com-glacier-png-1296419.png"
+        alt="mountain image"
+      />
+    </div>
+
+    <div class="middle-container">
+      <div class="profile">
+        <img src="images/yusuf.png.png" alt="my profile" id="about" />
+        <h2>Hello.</h2>
+        <p class="intro">
+          Welcome to my digital playground! 🚀 I'm thrilled to have you here
+          exploring the realm of web development with me. As a dedicated web
+          developer, I've crafted this space to showcase my passion for coding
+          and building interactive online experiences. Thank you for dropping
+          by, and I can't wait to collaborate on your next web venture!
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2 id="skills">My Skills.</h2>
+        <div class="skill-row">
+          <img
+            class="devope-image"
+            src="images/design and devops (1).png"
+            alt="design and devops picture"
+          />
+          <div class="skill-content">
+            <h3>Front-end Development</h3>
+            <p>
+              In my journey as a web developer and designer, I have developed a
+              profound understanding of HTML, CSS, and Bootstrap. Embracing the
+              challenges of the digital age, I continue to push boundaries,
+              seeking innovative solutions to captivate audiences and leave a
+              lasting impression
+            </p>
+          </div>
+        </div>
+        <div class="skill-row flex-reverse">
+          <img
+            class="camera-image"
+            src="images/photo-camera.png"
+            alt="photography picture"
+          />
+          <div class="skill-content">
+            <h3>Photography</h3>
+            <p>
+              Photography has taught me patience and mindfulness. Waiting for
+              the perfect moment to click the shutter, observing the interplay
+              of elements, and capturing the decisive moment require a
+              heightened awareness of my surroundings. Nothing compares to the
+              praise that i get from my friends when i showcase my skill.
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me" id="contact-me">
+        <h2>Get In Touch</h2>
+        <p class="contact-message">
+          I'm strongly pursuing towards Full stack development so if you want to
+          give an opportunity to showcase my skill my inbox is always open.
+        </p>
+        <a class="btn" href="mailto:sman99415@gmail.com">CONTACT ME</a>
+      </div>
+    </div>
+
+    <div class="bottom-container">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+      <p class="copyright">© 2023 Yousuf gani.</p>
+    </div>
+
+    <script>
+      function runOnScroll() {
+        const isAbove700 = document.body.scrollTop >= 700;
+
+        var navbar = document.getElementsByClassName("nav-bar")[0];
+
+        navbar.style.backgroundColor = isAbove700 ? "#fff" : "transparent";
+        navbar.style.boxShadow = isAbove700
+          ? "rgba(0, 0, 0, 0.24) 0px 3px 8px"
+          : "none";
+      }
+      window.addEventListener("scroll", runOnScroll);
+    </script>
+  </body>
+</html>
